@@ -1,0 +1,475 @@
+/* All Pages */
+/* Home Page */
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        /* margin: 0;
+        padding: 0; */
+    }
+  
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .logo {
+        max-width: 35px;
+        max-height: 35px;
+        margin: 0px 10px;
+    }    
+    nav ul {
+        display: flex;
+        list-style: none;
+        text-align: right;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+        text-align: center;
+        display: flex;
+    }
+    
+    nav ul li a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    nav ul li a:hover {
+        color: #000;
+    }
+    .active {
+        background-color: #F5F5F5;
+        color: red;
+    }
+
+    /* nav ul li a:active{
+        color: #f2f2f2;
+        background-color: #000;
+    }
+    nav ul li a::after{
+        color: #f2f2f2;
+        background-color: #000;
+    } */
+    .hero {
+        /* display: flex; */
+        padding-top: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        background-image: url('tractor-hero.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+    }
+    
+    .hero h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #000;
+    }
+
+    .hero p {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        color: #000;
+    }
+    
+    .button {
+        display: block;
+        padding: 10px 20px;
+        background-color: #008000;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        max-width: 120px;
+        text-align: center;
+        margin: auto;
+    }
+    /* .hero .button{        
+        text-align: center;
+        margin: auto;
+    } */
+    
+    .button:hover {
+        background-color: #006600;
+    }
+    
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+    
+    .feature {
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .feature img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .feature h3 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .feature p {
+        font-size: 1.2rem;
+    }
+    
+    .pricing {
+        padding: 50px;
+        background-color: #f7f7f7;
+        text-align: center;
+    }
+    
+    .pricing h2 {
+        margin-bottom: 30px;
+    }
+    
+    .pricing-table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pricing-column {
+        margin: 20px;
+        padding: 30px;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    .pricing-column h3 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .price {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    
+    .pricing-column ul {
+        list-style: none;
+   
+    }
+    
+    .pricing-column ul li {
+        margin-bottom: 10px;
+    }
+    
+    .pricing-column .button {
+        margin-top: 30px;
+    }
+
+    .social {
+        max-width: 40%;
+        margin: 0px auto;
+        overflow: auto; /* This clears any floats within the container element */
+    }
+    
+    .follow {
+        float: left;
+        margin-right: 10px; /* Add some space between the span and icons */
+    }
+    
+    .icons {
+        float: right;
+    } 
+    .icons i{
+        padding: 2px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .logo {
+        font-size: 2rem;
+        /* margin: 0; */
+    }
+    
+    @media (max-width: 768px) {
+        header {
+        flex-direction: column;
+        align-items: center;
+        }
+        
+        nav ul {
+        margin-top: 20px;
+        }
+        
+        .hero {
+        height: 300px;
+        }
+        
+        .hero h2 {
+        font-size: 2.5rem;
+        }
+        
+        .hero p {
+        font-size:1rem;
+        }
+
+        .features {
+        padding: 20px;
+        }
+
+        .feature {
+        flex: 1 1 200px;
+        margin: 10px;
+        }
+
+        .pricing {
+        padding: 20px;
+        }
+
+        .pricing-table {
+        flex-direction: column;
+        align-items: center;
+        }
+
+        .pricing-column {
+        margin: 20px 0;
+        }
+
+        .logo {
+        font-size: 1.5rem;
+        }
+    }  
+
+
+    .menu{
+        /* position: static; */
+        text-align: right;
+        margin: 20px;
+        /* background-color: brown; */
+    }
+    .menu-ul{
+    justify-self: end;
+    }
+    .menu-ul li{
+        display: inline;
+        border: 0.7rem wheat solid;
+        margin: 0px 3px;
+    }
+    .menu-ul li a{
+        text-align: center;
+        color: blue;
+        text-decoration: none;
+        background-color: wheat;
+        padding: 0px 15px;
+    }
+    .menu-ul li a:hover{
+        border: 0.1rem black solid;
+        background-color: black;
+        padding: 8px;
+        transition: 1s;
+    }
+    /* footer{
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+    footer .footer-elements div{
+        display: inline;
+        margin-left: 80px;
+    }
+    .footer-elements .left-element{
+        width: auto;
+        float: left;
+    }
+    .footer-elements .right-element{
+        width: auto;
+        float: right;
+        padding-right: 10pxy;
+    }
+    footer .footer-elements{
+        border-bottom: 1px white solid;
+        padding: 25px;
+    }
+    footer .footer-elements1{
+        border-bottom: 1px white solid;
+    }
+    footer .footer-elements div a{
+        padding-left: 10px;
+    }
+    .footer-elements1{
+        padding: 0px;
+        margin: 0px;;
+    } */
+
+
+
+
+
+    /* About Page */
+    .about{
+        /* display: block; */
+        margin:30px auto;
+        padding: 10px 10px;
+        border-radius: 10px;
+        transition: 1s;
+        height: 50vh;
+        width: 80%;
+    }
+    .about h1{
+        text-align: center;
+        border: 1px rgb(201, 36, 105) solid;
+        border-radius:50%;
+        color: rgb(201, 36, 105);
+        /* background-color: rgb(201, 36, 105); */
+        max-width: 150px;
+        margin:10px auto;
+    }
+    .about .ip-box{
+        display: flex;
+        /* width: 50vw; */
+        height: 70%;
+        margin: auto;
+    }
+    .about .ip-box p,.about .ip-box img{
+        text-align: center;
+        margin: 10px;
+        width: 50%;
+        height: 100%;
+    }
+    .about .ip-box p{
+        display: flex;
+        /* text-align: center; */
+        justify-content: center;
+        align-items: center;
+    }
+    .about .ip-box img{
+        object-fit: cover;
+        border-radius: 2%;
+        border: #000 1px solid;
+    }
+    .about:hover{
+        background-color: aqua;
+        transform: scale(1.1);
+    }
+    /* @media(max-width: 600px) {
+        .ip-box p{
+            text-align: justify;
+        }
+    } */
+
+    /* Services Page */
+    .container{
+        max-width: 80%;
+        margin: 20px auto;
+    }
+    .tools-div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        grid-gap: 5px;
+    }
+    .tools-div .box{
+        padding: 10px;
+        background-color: aqua;
+        box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+        transition: 2s;
+    }
+    .box img{
+        display: flex;
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        border-radius: 2%;
+    }
+    .tools-div p{
+        color: red;
+        text-align: center;
+        padding-top: 7px;
+        padding-bottom: 0px;
+        text-decoration:underline;
+    }
+    .tools-div .box:hover{
+        transform: scale(0.8);
+        /* z-index: 2; */
+        cursor: pointer;
+    }
+
+
+    /* CONTACT PAGE */
+    form {
+        width: 50%;
+        margin: 20px auto;
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px #888888;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #444444;
+    }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #555555;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #888888;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  } 
